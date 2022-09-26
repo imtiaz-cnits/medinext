@@ -50,6 +50,7 @@
 .main-topbar {
     background: var(--paste-green);
     padding: 2px;
+    font-size: 14px;
 }
 
 .topbar a {
@@ -117,6 +118,31 @@
     margin-left: 20px;
 }
 
+.navbar-menu li a {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-menu li a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: var(--paste-green);
+    border-radius: 6px;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s ease;
+}
+
+.navbar-menu li a:hover::after {
+    width: 100%;
+}
+
+.navbar-menu li a:hover {
+    color: var(--black);
+}
+
 .navbar-social-icon span i{
     color: var(--paste-green);
     font-size: 1.3em;
@@ -131,6 +157,7 @@
     background: var(--paste-green);
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .hero-title h5 {
@@ -139,8 +166,9 @@
 }
 
 .hero-main-header h1 {
-    font-size: 4.5em;
+    font-size: 4em;
     z-index: 1;
+    font-weight: 700;
 }
 
 .hero-semi-header h2 {
@@ -155,20 +183,22 @@
 
 .content {
     position: relative;
+    font-family: var(--header-font);
 }
 
 .hero-circle-img img {
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: auto;
-    top: -200px;
+    top: -180px;
     z-index: 1;
 }
 
 .hero-man img {
     margin-top: 30px;
-    width: 100%;
+    width: 90%;
     height: auto;
+    padding-left: 120px;
 }
 
 .hero-dynamic-text {
@@ -176,6 +206,7 @@
     line-height: 90px;
     height: 90px;
     overflow: hidden;
+    width: 80%;
 }
 
 .hero-dynamic-text li {
@@ -184,6 +215,7 @@
     position: relative;
     top: 0;
     animation: slide 9s steps(3) infinite;
+    font-weight: 600;
 }
 
 @keyframes slide {
@@ -213,9 +245,21 @@
     }
 }
 
+.hero-down-arrow {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-down-arrow img{
+    width: 70px;
+    height: auto;
+}
+
 @media screen and (max-width: 1400px) {
     .hero-main-header h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
     .hero-dynamic-text {
@@ -240,7 +284,7 @@
 
 @media screen and (max-width: 1200px) {
     .hero-main-header h1 {
-        font-size: 3.3em;
+        font-size: 3.1em;
     }
 
     .hero-dynamic-text {
@@ -265,7 +309,7 @@
 
 @media screen and (max-width: 990px) {
     .hero-main-header h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .hero-dynamic-text {
@@ -285,6 +329,15 @@
             top: -120px;
         }
     }
+
+    .hero-down-arrow {
+        bottom: -35px;
+    }
+
+    .hero-down-arrow img{
+        width: 70px;
+        height: auto;
+    }
     
 }
 
@@ -298,14 +351,22 @@
         display: none;
     }
 
+    .hero-dynamic-text {
+        margin: auto;
+    }
+
     .hero-man img {
-        width: 70%;
+        width: 80%;
         height: auto;
         display: block;
         margin: auto;
         margin-top: 50px;
+        padding: 0;
+    }
+
+    .hero-down-arrow {
+        display: none;
     }
 }
-
 
 /* Hero Section End */
