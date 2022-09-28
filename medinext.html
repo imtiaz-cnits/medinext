@@ -148,13 +148,11 @@
                         <div class="hero-main-header">
                             <h1 class="hero-header">Hi, I’m <span class="text-white">Jone Lee a</span></h1>
                         </div>
+
                         <div class="hero-dynamic-text">
-                            <ul>
-                                <li><span>Phychologist.</span></li>
-                                <li><span>Therapist.</span></li>
-                                <li><span>Psychoanalyst.</span></li>
-                            </ul>
+                            <span class="text sec-text"></span>
                         </div>
+
                         <div class="hero-circle-img">
                             <img src="./image/hero-circle.png" alt="hero-circle">
                         </div>
@@ -169,14 +167,107 @@
         <div class="hero-down-arrow">
             <img src="./image/arrow-down.png" alt="arrow-down">
         </div>
-        
+
     </section>
 
     <!-- Hero Section End -->
 
+    <!-- Servive Section Start -->
+
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md mt-5 p-5 text-center service-title">
+                    <h1>What We Can Offer</h1>
+                    <p>Porchetta dolor magna ipsum . Irure beef ribs chicken dolore, laboris filet mignon <br>
+                        ribeye bacon swine pork lion commodo park chop corned beef hamburger.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row justify-content-around">
+                        <div class="col-md-2 mental">
+                            <div class="mental-img">
+                                <img src="./image/mental.png" alt="mental">
+                            </div>
+                            <div class="mental-content">
+                                <h3 class="text-center">Mental Health</h3>
+                                <p class="text-center">Improve your focus, relieve stress and anxiety and developcreativity</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mental">
+                            <div class="mental-img">
+                                <img src="./image/mental.png" alt="mental">
+                            </div>
+                            <div class="mental-content">
+                                <h3 class="text-center">Mental Health</h3>
+                                <p class="text-center">Improve your focus, relieve stress and anxiety and developcreativity</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mental">
+                            <div class="mental-img">
+                                <img src="./image/mental.png" alt="mental">
+                            </div>
+                            <div class="mental-content">
+                                <h3 class="text-center">Mental Health</h3>
+                                <p class="text-center">Improve your focus, relieve stress and anxiety and developcreativity</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mental">
+                            <div class="mental-img">
+                                <img src="./image/mental.png" alt="mental">
+                            </div>
+                            <div class="mental-content">
+                                <h3 class="text-center">Mental Health</h3>
+                                <p class="text-center">Improve your focus, relieve stress and anxiety and developcreativity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Servive Section End -->
+
+
+
+
+
+
+
+
+
+
     <br>
     <br>
 
+    <!-- JavaScript Start -->
+
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Phychologist.";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Therapist.";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Psychoanalyst.";
+            }, 8000); //1s = 1000 milliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>
+
+    <!-- JavaScript End -->
 
 </body>
 
