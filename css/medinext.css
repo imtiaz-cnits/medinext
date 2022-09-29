@@ -113,16 +113,15 @@
 
 .navbar-menu li a {
     font-family: var(--text-font);
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.1em;
+    display: inline-block;
     color: var(--black);
     margin-left: 20px;
 }
 
 .nav-link {
     display: flex;
-    font-size: 24px;
-    font-weight: 100;
     padding: 5px 0;
     position: relative;
     overflow: hidden;
@@ -368,11 +367,16 @@
     margin: auto;
 }
 
+.service-circle {
+    position: absolute;
+    z-index: -1;
+}
+
 .mental {
     width: 100%;
     background: var(--white);
     padding: 10px;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 5px 5px 40px #C3F6EA;
 }
 
@@ -382,7 +386,12 @@
     padding-top: 20px;
 }
 
-.mental-content p {
+.service-content-title h3 {
+    padding-top: 10px;
+    font-size: 1.7em;
+}
+
+.service-content-title p {
     font-size: 13px;
 }
 
@@ -390,7 +399,7 @@
     width: 100%;
     background: var(--white);
     padding: 10px;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 5px 5px 40px #C3F6EA;
 }
 
@@ -400,15 +409,11 @@
     padding-top: 20px;
 }
 
-.relationship-content p {
-    font-size: 13px;
-}
-
 .feelings {
     width: 100%;
     background: var(--white);
     padding: 10px;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 5px 5px 40px #C3F6EA;
 }
 
@@ -418,15 +423,11 @@
     padding-top: 20px;
 }
 
-.feelings-content p {
-    font-size: 13px;
-}
-
 .conflicting {
     width: 100%;
     background: var(--white);
     padding: 10px;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 5px 5px 40px #C3F6EA;
 }
 
@@ -436,14 +437,95 @@
     padding-top: 20px;
 }
 
-.conflicting-content p {
-    font-size: 13px;
+.relaxation {
+    width: 100%;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 40px #C3F6EA;
+}
+
+.relaxation-img img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.mind-games {
+    width: 100%;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 40px #C3F6EA;
+}
+
+.mind-games-img img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.meditation {
+    width: 100%;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 40px #C3F6EA;
+}
+
+.meditation-img img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.depression {
+    width: 100%;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 40px #C3F6EA;
+}
+
+.depression-img img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
 }
 
 
+@media screen and (max-width: 1400px) {
+    .service-content-title h3 {
+        font-size: 1.2em;
+    }
+}
 
+@media screen and (max-width: 1200px) {
+    .service-content-title h3 {
+        font-size: 1em;
+    }
 
+    .service-content-title p {
+        font-size: 11px;
+    }
 
+    .service-circle img{
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 990px) {
+    .service-content-title h3 {
+        font-size: 1.5em;
+    }
+
+    .service-content-title p {
+        font-size: 14px;
+    }
+
+    .service-circle {
+        display: none;
+    }
+}
 
 /* Servive Section End */
