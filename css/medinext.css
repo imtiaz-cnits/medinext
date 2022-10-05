@@ -702,6 +702,7 @@
     font-family: var(--text-font);
     border-radius: 8px;
     transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 .profile-card-midle h2 {
@@ -728,6 +729,11 @@
 .profile-card-left:hover, 
 .profile-card-right:hover {
     transform: scale(1.1, 1.15);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1), 7px 7px 20px rgba(0, 0, 0, 0.1), 7px 7px 40px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card-midle:hover {
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1), 7px 7px 20px rgba(0, 0, 0, 0.1), 7px 7px 40px rgba(0, 0, 0, 0.1);
 }
 
 .profile-card-midle:hover h2 {
