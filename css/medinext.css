@@ -19,6 +19,7 @@
     --white: #fff;
     --paste-green: #55D1B4;
     --light-green: #C3F6EA;
+    --dark-green: #49BEA2;
     --header-font: "Montserrat", sans-serif;
     --text-font: "Poppins", sans-serif;
 }
@@ -227,6 +228,7 @@
 
 .hero-dynamic-text {
     overflow: hidden;
+    user-select: none;
     margin-top: -20px;
 }
 
@@ -365,6 +367,18 @@
     background: #fff;
     border-radius: 18px;
     box-shadow: 5px 5px 20px #C3F6EA;
+    transition: all .5s;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-card::after {
+    content: '@';
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    opacity: 0;
+    transition: all .5s;
 }
 
 .service-card h4 {
@@ -383,9 +397,36 @@
     left: 0;
 }
 
+.service-card:hover.service-card::after {
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-20px);
+    background: linear-gradient(145deg, var(--paste-green), var(--light-green));
+}
+
 @media screen and (max-width: 990px) {
     .service-title img {
         display: none;
+    }
+
+    .service-title h1 {
+        font-size: 2.5em;
+    }
+
+    .service-title p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-title h1 {
+        font-size: 2em;
+    }
+
+    .service-title p {
+        font-size: .7em;
     }
 }
 
@@ -408,7 +449,7 @@
     z-index: -1;
 }
 
-.about-man img{
+.about-man img {
     z-index: 1;
     width: 100%;
     margin: 100px 0;
@@ -458,7 +499,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .about-man img{
+    .about-man img {
         width: 100%;
         margin: 50px 0;
     }
@@ -470,7 +511,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .about-man img{
+    .about-man img {
         width: 100%;
         margin: 30px 0;
     }
@@ -480,7 +521,7 @@
     }
 
     .about-content h1 {
-        margin-top: 80px;
+        margin-top: 30px;
         font-size: 1.8em;
     }
 
@@ -490,7 +531,7 @@
 }
 
 @media screen and (max-width: 990px) {
-    .about-man img{
+    .about-man img {
         width: 100%;
         margin: 25px 0;
     }
@@ -521,7 +562,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about-man img{
+    .about-man img {
         width: 100%;
         margin-top: 30px;
     }
@@ -564,3 +605,293 @@
 }
 
 /* About Section End */
+
+/* Appoinment Section Start */
+
+.appointment-header h1 {
+    font-size: 3.5em;
+    font-family: var(--header-font);
+    font-weight: 700;
+    color: var(--paste-green);
+    margin-top: 100px;
+}
+
+.appointment-header .under-line-1 {
+    width: 200px;
+    height: 6px;
+    background: linear-gradient(to right, #2EC7A2, #96EAD6);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+/* Appoinment Section End */
+
+/* Pricing Section Start */
+
+.pricing {
+    background: var(--paste-green);
+    padding: 100px;
+}
+
+.pricing-header h1 {
+    font-size: 3.5em;
+    font-family: var(--header-font);
+    font-weight: 700;
+    color: var(--paste-green);
+    color: #fff;
+}
+
+.pricing-header .under-line-2 {
+    width: 200px;
+    height: 6px;
+    background: linear-gradient(to left, #96EAD6, #ffffff);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.profile-card {
+    background: var(--white);
+    margin: 50px;
+    margin-top: 150px;
+    font-family: var(--text-font);
+    border-radius: 8px;
+}
+
+.profile-card h2 {
+    width: 100%;
+    background: var(--dark-green);
+    text-align: center;
+    color: #fff;
+    padding: 60px 0 100px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profile-card img {
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+}
+
+.profile-title {
+    padding: 20px 50px 50px 50px;
+}
+
+.profile-title h3 {
+    text-align: center;
+}
+
+.profile-title h3 span {
+    font-size: 2em;
+}
+
+.profile-title p {
+    font-size: .8em;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.profile-card-midle {
+    background: var(--white);
+    margin: 50px;
+    margin-top: 140px;
+    font-family: var(--text-font);
+    border-radius: 8px;
+    transform: scale(1.2);
+}
+
+.profile-card-midle h2 {
+    background: var(--light-green);
+    text-align: center;
+    color: var(--dark-green);
+    padding: 60px 0 100px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: .5s;
+}
+
+.profile-card-midle img {
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+}
+
+.profile-card-left, 
+.profile-card-right {
+    transition: all .5s;
+}
+
+.profile-card-left:hover, 
+.profile-card-right:hover {
+    transform: scale(1.1, 1.15);
+}
+
+.profile-card-midle:hover h2 {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .profile-title h3 span {
+        font-size: 1.5em;
+    }
+
+    .profile-title {
+        padding: 15px 40px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .profile-title h3 {
+        font-size: 1.3em;
+    }
+
+    .profile-title h3 span {
+        font-size: 1.5em;
+    }
+
+    .profile-title {
+        padding: 8px 20px 20px 20px;
+    }
+
+    .profile-title p {
+        font-size: .6em;
+    }
+
+    .profile-card h2, .profile-card-midle h2 {
+        padding: 30px 0 60px 0;
+    }
+
+    .profile-card img, .profile-card-midle img {
+        width: 30%;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .pricing {
+        padding: 100px 0;
+    }
+
+    .profile-card h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-title h3 {
+        font-size: 1.1em;
+    }
+
+    .profile-title h3 span {
+        font-size: 1.4em;
+    }
+
+    .profile-title {
+        padding: 8px 20px 20px 20px;
+    }
+
+    .profile-title p {
+        font-size: .7em;
+    }
+
+    .profile-card h2, .profile-card-midle h2 {
+        padding: 30px 0 60px 0;
+    }
+
+    .profile-card img, .profile-card-midle img {
+        width: 30%;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .pricing {
+        padding: 50px 0;
+    }
+
+    .pricing-header .under-line-2 {
+        margin-bottom: 50px;
+    }
+
+    .profile-card, .profile-card-midle {
+        margin: 10px;
+    }
+
+    .profile-card-midle {
+        transform: scale(1);
+    }
+
+    .profile-card img, .profile-card-midle img {
+        width: 20%;
+        margin-top: -50px;
+    }
+
+    .profile-card h2 {
+        font-size: 1.8em;
+    }
+
+    .profile-title h3 {
+        font-size: 1.5em;
+    }
+
+    .profile-title h3 span {
+        font-size: 1.4em;
+    }
+
+    .profile-title {
+        padding: 8px 20px 20px 20px;
+    }
+
+    .profile-title p {
+        font-size: .9em;
+    }
+
+    .profile-title {
+        padding: 8px 40px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-header {
+        font-size: .7em;
+    }
+
+    .profile-card img, .profile-card-midle img {
+        width: 20%;
+        margin-top: -40px;
+    }
+
+    .profile-title p {
+        font-size: .8em;
+    }
+}
+
+/* Pricing Section End */
+
+/* Case Section Start */
+
+.case-header h1 {
+    font-size: 3.5em;
+    font-family: var(--header-font);
+    font-weight: 700;
+    color: var(--paste-green);
+}
+
+.case-header .under-line-3 {
+    width: 200px;
+    height: 6px;
+    background: linear-gradient(to right, #2EC7A2, #96EAD6);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+
+
+/* Case Section End */
