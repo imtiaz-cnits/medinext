@@ -625,7 +625,55 @@
     margin-top: 15px;
 }
 
+.form {
+    padding: 150px 170px 170px 170px;
+}
 
+.form h2 {
+    background: #2EC7A2;
+    border-radius: 30px;
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px 0 10px 0;
+}
+
+.form-head {
+    padding: 0 15px;
+}
+
+.main-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.main-form select {
+    background-color: #C3F6EA;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-family: var(--text-font);
+    color: rgb(97, 97, 97);
+    font-size: 0.9rem;
+}
+.main-form input {
+    background-color: #C3F6EA;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-family: var(--text-font);
+    color: rgb(97, 97, 97);
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 990px) {
+    .appointment-header h1 {
+        font-size: 2.3em;
+    }
+}
 
 /* Appoinment Section End */
 
@@ -721,12 +769,12 @@
     margin-top: -70px;
 }
 
-.profile-card-left, 
+.profile-card-left,
 .profile-card-right {
     transition: all .5s;
 }
 
-.profile-card-left:hover, 
+.profile-card-left:hover,
 .profile-card-right:hover {
     transform: scale(1.1, 1.15);
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1), 7px 7px 20px rgba(0, 0, 0, 0.1), 7px 7px 40px rgba(0, 0, 0, 0.1);
@@ -769,11 +817,13 @@
         font-size: .6em;
     }
 
-    .profile-card h2, .profile-card-midle h2 {
+    .profile-card h2,
+    .profile-card-midle h2 {
         padding: 30px 0 60px 0;
     }
 
-    .profile-card img, .profile-card-midle img {
+    .profile-card img,
+    .profile-card-midle img {
         width: 30%;
         margin-top: -40px;
     }
@@ -804,11 +854,13 @@
         font-size: .7em;
     }
 
-    .profile-card h2, .profile-card-midle h2 {
+    .profile-card h2,
+    .profile-card-midle h2 {
         padding: 30px 0 60px 0;
     }
 
-    .profile-card img, .profile-card-midle img {
+    .profile-card img,
+    .profile-card-midle img {
         width: 30%;
         margin-top: -40px;
     }
@@ -819,11 +871,16 @@
         padding: 50px 0;
     }
 
+    .pricing-header h1 {
+        font-size: 2.5em;
+    }
+
     .pricing-header .under-line-2 {
         margin-bottom: 50px;
     }
 
-    .profile-card, .profile-card-midle {
+    .profile-card,
+    .profile-card-midle {
         margin: 10px;
     }
 
@@ -831,7 +888,8 @@
         transform: scale(1);
     }
 
-    .profile-card img, .profile-card-midle img {
+    .profile-card img,
+    .profile-card-midle img {
         width: 20%;
         margin-top: -50px;
     }
@@ -859,14 +917,21 @@
     .profile-title {
         padding: 8px 40px 40px 40px;
     }
+
+    .profile-card-left:hover,
+    .profile-card-right:hover {
+        transform: scale(1);
+        ;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .pricing-header {
-        font-size: .7em;
+        font-size: .6em;
     }
 
-    .profile-card img, .profile-card-midle img {
+    .profile-card img,
+    .profile-card-midle img {
         width: 20%;
         margin-top: -40px;
     }
@@ -881,6 +946,7 @@
 /* Case Section Start */
 
 .case-header h1 {
+    margin-top: 100px;
     font-size: 3.5em;
     font-family: var(--header-font);
     font-weight: 700;
@@ -896,6 +962,31 @@
     margin-top: 15px;
 }
 
+.case-1 {
+    position: relative;
+}
+
+.case-1 h3 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.case-content {
+    margin-top: 100px !important;
+}
+
+.csae-text {
+    font-weight: 600;
+    line-height: 15px;
+}
+
+@media screen and (max-width: 990px) {
+    .case-header h1 {
+        font-size: 2.3em;
+    }
+}
 
 
 
