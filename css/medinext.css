@@ -1728,6 +1728,22 @@
     padding-top: 20px;
 }
 
+.top-btn a {
+    background-color: var(--paste-green);
+    padding: 12px 20px;
+    font-size: 2em;
+    color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.top-btn a:hover {
+    color: var(--white);
+    background: var(--dark-green);
+}
+
 @media screen and (max-width: 1400px) {
     .contact-details h2, .theme h2 {
         font-size: 1.7em;
